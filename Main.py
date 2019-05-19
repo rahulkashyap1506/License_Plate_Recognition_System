@@ -20,8 +20,9 @@ def main():
     
     # Read image
     img = cv2.imread("5.jpg")
-    #if img == None:
-    #    print("ERROR: Image is missing")
+    if img == None:
+        print("ERROR: Image is missing")
+        return
     cv2.imshow('1. Original Image', img)
     
     # Search for possible plates in image
