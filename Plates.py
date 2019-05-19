@@ -23,9 +23,6 @@ def findCharacters(imgThresh):
     # Return value
     possibleCharacters = []
     
-    # Total number of possible characters
-    count = 0
-    
     # Contours spresent in the imgThresh
     contours, hierarchy = cv2.findContours(imgThresh, 
                                            cv2.RETR_CCOMP, 
