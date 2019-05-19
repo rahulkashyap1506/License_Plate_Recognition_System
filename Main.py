@@ -20,7 +20,7 @@ def main():
     
     # Read image
     img = cv2.imread("5.jpg")
-    if img == None:
+    if img is None:
         print("ERROR: Image is missing")
         return
     cv2.imshow('1. Original Image', img)
